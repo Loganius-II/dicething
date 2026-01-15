@@ -1,3 +1,5 @@
+from random import choice, randint
+
 def main():
     pass
 
@@ -5,7 +7,9 @@ def output_dice(dice):
     pass
 
 def roll_die():
-    pass
+    # accepts nothign
+    # returns a random iteger between 1 and 6
+    return randint(1,7)
 
 def first_roll():
     pass
