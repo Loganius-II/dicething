@@ -1,8 +1,8 @@
 # Contact Tracker
-Logan, Antonio
+Logan, Logan
 
-## Contact tracker Description
-a simple contact managment system to display simple file management
+## Dice thingy Description
+it rolls dice until they are all the same
 
 ### Contact tracker Flowchart
 ```mermaid
