@@ -3,8 +3,18 @@ from random import choice, randint
 def main():
     # accepts no arguments
     # calls all functions to play the number of games specified
-    pass
-
+    dice = list()
+    
+    for _ in range(1,13):
+        dice.append(roll_die())
+    
+    output_dice(dice)
+    
+    while True:
+        reroll_many()
+        
+        
+        
 
 def output_dice(dice):
     # accepts dice
@@ -55,10 +65,17 @@ def reroll_one(dice, index):
     # accepts a list of dice and an index
     # uses roll_die to reroll that index
     # returns a new list with that index rerolled
-    pass
+    
+    dice[index] = roll_die()
 
 def reroll_many(dice):
     # accepts a list of dice
     # calls list_unmatched_dice() and reroll_one() to reroll each die != the mode
     # returns a list of rerolled dice
-    pass
+    
+    rerolls = list_unmatched_dice(dice)
+    
+    for reroll in rerolls:
+        reroll_one(dice, reroll)
+        
+    
