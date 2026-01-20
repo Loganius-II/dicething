@@ -3,11 +3,12 @@ from random import choice, randint
 def main():
     # accepts no arguments
     # calls all functions to play the number of games specified
-
+    pass
 
 def output_dice(dice):
     # accepts dice
     # outputs each die in the list
+    pass
 
 def roll_die():
     # accepts nothing
@@ -23,13 +24,24 @@ def first_roll():
 def count_frequencey(dice, number):
     # accepts a list of 12 random integers and a target die
     # returns how often that target die occurs in the list
-    pass
+    occurances = 0
+    for di in dice:
+        if di == number:
+            occurances += 1
 
-def find_mode(dice):
+    return occurances    
+
+def find_mode(dice: list):
     # accepts a list of dice
     # uses count_frequencey(dice, die) to determine how often each die occurs
     # returns the mode
-    pass
+    modes = []
+    for i in range(1,7):
+        modes.append(count_frequencey(dice, i))
+    
+    return modes.index(max(modes)) + 1
+
+        
 
 def list_unmatched_dice(dice):
     # accepts a list of dice
