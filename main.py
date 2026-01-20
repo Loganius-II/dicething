@@ -59,7 +59,13 @@ def list_unmatched_dice(dice):
     # accepts a list of dice
     # determines which dice need rerolled
     # returns a list of indexes to reroll
-    pass
+    reroll = []
+    mode = find_mode(dice)
+    for di in dice:
+        if di != mode:
+            reroll.append(dice.index(di))
+    return reroll
+            
 
 def reroll_one(dice, index):
     # accepts a list of dice and an index
