@@ -5,10 +5,12 @@ def main():
     # calls all functions to play the number of games specified
     pass
 
+
 def output_dice(dice):
     # accepts dice
     # outputs each die in the list
-    pass
+    for di in dice:
+        print(di)
 
 def roll_die():
     # accepts nothing
@@ -19,7 +21,7 @@ def first_roll():
     # accepts nothing
     # returns the random integers between 1 and 12
     list = [roll_die() for num in range(13)]
-    print(list)
+    return list
 
 def count_frequencey(dice, number):
     # accepts a list of 12 random integers and a target die
