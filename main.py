@@ -11,16 +11,18 @@ def main():
     output_dice(dice)
     
     while True:
-        reroll_many()
+        reroll_many(dice)
+        print(dice)
         
+        if all(die == 5 for die in dice):
+            break
         
         
 
 def output_dice(dice):
     # accepts dice
     # outputs each die in the list
-    for di in dice:
-        print(di)
+    print(dice)
 
 def roll_die():
     # accepts nothing
