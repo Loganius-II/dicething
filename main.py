@@ -84,4 +84,8 @@ def reroll_many(dice):
     for reroll in rerolls:
         reroll_one(dice, reroll)
         
+
+                         
+        
+        
     
