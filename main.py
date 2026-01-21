@@ -14,7 +14,7 @@ def main():
         reroll_many(dice)
         print(dice)
         
-        if all(die == 5 for die in dice):
+        if all(die == find_mode(dice) for die in dice):
             break
         
         
@@ -87,3 +87,5 @@ def reroll_many(dice):
         reroll_one(dice, reroll)
         
     
+
+main()
